@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dhruti Joshi, portfolio, Dhruti, Data Scientist, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Dhruti's Portfolio. Data Scientints, Data Analysts and Data Engineer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dhruti Joshi</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+  
+
+  <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+          <ul>
+              <li><a class="active" href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#experience">Recommendation</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h1>Dhruti</h1>
+    <h2>Joshi</h2>
+    <p> <span class="typing-text"></span></p>
+    
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/dhruti-joshi-3ab15415a/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/dhrutijoshi11" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="youtube" aria-label="YouTube" href="https://www.youtube.com/channel/UC35XdMTXRS5pr4DDswya-xw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/profilepic.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About Me</h2>
+    
+    <div class="row">
+
+    <div class="image2">
+        <img draggable="false" class="tilt" src="./assets/images/image2.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Dhruti Joshi</h3>
+        <span class="tag">Data Scientist | Data Analysts | Data Engineer </span>
+        
+        <h6>I'm a self-motivated and adaptable Computer Science Graduate Student with a strong passion for data science. Actively pursuing career opportunities in the field, I aim to apply my skills in machine learning, data analysis, and statistical modeling. My strengths lie in core fundamentals like Data Structures & Algorithms, complemented by a deep understanding of data manipulation, visualization, and predictive modeling techniques.</h6>
+        
+        <h6>To know more</h6>
+        <div class="resumebtn">
+            <a href="need to put link" target="_blank" class="btn"><span>Hire me</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    <div class="skills">
+      <div class="row" id="skillsContainer">
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <p><b>Development Language: -</b> Java, Python, C++, C, JavaScript, HTML, CSS, PHP</p>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <p><b>Databases: -</b> MySQL, Snowflake, PostgreSQL, Snowflake</p>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <p><b>Framework & Technologies: -</b> Angular, NodeJS, Apache Kafka, Docker, Bootstrap, Azure, Kubernetes, Springboot</p>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <p><b>Developer Tools: -</b> IntelliJ, DBVisualiser, Visual Studio Code, Git, GitHub, MS Office, Word press, Android Studio</p>
+            </div>
+          </li>
+
+        </ul>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+<script>
+  function showComingSoon() {
+    // Display a "Coming Soon" message
+    alert("Coming Soon!");
+  }
+</script>
+
+<!--project section starts -->
+<section class="projects" id="project">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i>Projects</h2>
+  <p>Take a look at my Work.</p>
+
+  <div class="box-container">
+
+      <ul class="project-list">
+
+        <li class="project-item active" data-filter-item data-category="web development">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/MovieRecommendationGenerator')">
+            <h3 class="project-title">ReviewFlix: Social-Media Powered Movie Recommender</h3>
+            <p class="project-category">Data Mining</p>
+            <button class="repo-button" onclick="openRepo('https://github.com/dhrutijoshi11/MovieRecommendationGenerator')">Click me</button>
+          </div>
+        </li>
+        
+
+        <li class="project-item  active" data-filter-item data-category="web design">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">
+            <h3 class="project-title">VFS(Virtual fashion stylist)</h3>
+            <p class="project-category">Mobile Application</p>
+            <button class="repo-button" onclick="openRepo('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">Click me</button>
+          </a>
+        </li>
+
+        <li class="project-item  active" data-filter-item data-category="web development">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">
+            <h3 class="project-title">Community Website</h3>
+            <p class="project-category">Website</p>
+            <button class="repo-button" onclick="showComingSoon()">Click me</button>
+          </a>
+        </li>
+
+        <li class="project-item  active" data-filter-item data-category="applications">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">
+            <h3 class="project-title">Alteration of Train Derailments Using Image processing</h3>
+            <p class="project-category">(Paper Published)</p>
+            <button class="repo-button" onclick="showComingSoon()">Click me</button>
+          </a>
+        </li>
+        <li class="project-item  active" data-filter-item data-category="web design">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">
+            <h3 class="project-title">Traffic classification of Network</h3>
+            <p class="project-category">Machine Learning</p>
+            <button class="repo-button" onclick="showComingSoon()">Click me</button>
+          </a>
+        </li>
+        <li class="project-item  active" data-filter-item data-category="web design">
+          <div class="project-box" onclick="openPopup('https://github.com/dhrutijoshi11/virtual_fashion_stylist')">
+            <h3 class="project-title">Blockendance: Proof of concept</h3>
+            <p class="project-category">Blockchain</p>
+            <button class="repo-button" onclick="showComingSoon()">Click me</button>
+          </a>
+        </li>
+      </ul>
+  </div>
+</section>
+<!--project section ends -->
+
+
+
+<section class="service" id="service">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i>Services</h2>
+  <p>Explore some of the services I specialize in and enjoy working on.</p>
+  <div class="service-container">
+    <div class="service-card">
+      <h3>Data Scientist</h3>
+      <p>I provide services such as employing advanced analytics, machine learning, and statistical modeling for insightful decision-making and innovation.</p>
+    </div>
+    <div class="service-card">
+      <h3>Data Engineer</h3>
+      <p>I ensure seamless integration, efficient processing, and reliable storage for your evolving business needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Data Analysts</h3>
+      <p>I provide expertise in interpreting and analyzing data to deliver actionable recommendations and facilitate informed decision-making.</p>
+    </div>
+    <div class="service-card">
+      <h3>Web Developer</h3>
+      <p>I craft and enhance the websites for a seamless user experience, cutting-edge design, and efficient functionality aligned with your business objectives.</p>
+    </div>
+    <div class="service-card">
+      <h3>App Developer</h3>
+      <p>I Develop user-friendly apps with cutting-edge design and efficient functionality to meet your business goals.</p>
+    </div>
+    <div class="service-card">
+      <h3>Web Designing</h3>
+      <p>I Create visually appealing websites with intuitive design and seamless functionality tailored to your business needs.</p>
+    </div>
+  </div>
+</section>
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Contact</h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="left-section">
+        <h3>Get in Touch</h3>
+        <h4>Let's Create Something Amazing!</h4>
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Dhruti Joshi</h3>
+          <p>Thank you for visiting my website. Connect with me. </p>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+1 361-741-1582</p>
+          <p> <i class="fas fa-envelope"></i>16dhrutijoshi@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Texas, USA</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/dhruti-joshi-3ab15415a/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/dhrutijoshi11" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:jigarsable21@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.instagram.com/jigarsable.dev" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed by <a href="https://www.linkedin.com/in/dhruti-joshi-3ab15415a/"> Dhruti joshi</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
