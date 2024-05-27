@@ -37,41 +37,28 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
-
+    
 });
+
+
+
 
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Dhruti | Portfolio";
+            $("#favicon").attr("href", "assets/images/profile.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "Dhruti joshi";
+            $("#favicon").attr("href", "assets/images/profile.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Data Scientist", "Data Analysts","Data Engineer", "web designing", "android development", "web development"],
+    strings: ["Data Scientist", "Data Analysts","Data Engineer", "ML Engineer", "AI Engineer"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -106,56 +93,78 @@ function showSkills(skills) {
     });
     skillsContainer.innerHTML = skillHTML;
 }
+const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .project-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".box-container .slider-scrollbar");
+    const scrollbarThumb = document.querySelector(".scrollbar-thumb"); // Correct variable name used
 
-function showProjects(projects) {
-    let projectsContainer = document.querySelector("#work .box-container");
-    let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
-        projectHTML += `
-        <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>`
-    });
-    projectsContainer.innerHTML = projectHTML;
+    let maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
-    // <!-- tilt js effect starts -->
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 15,
-    });
-    // <!-- tilt js effect ends -->
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "block";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "block";
+    };
 
-    /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    };
+
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
     });
 
-    /* SCROLL PROJECTS */
-    srtop.reveal('.work .box', { interval: 200 });
+    imageList.addEventListener("scroll", () => {
+        handleSlideButtons();
+        updateScrollThumbPosition();
+    });
 
-}
+    window.addEventListener("resize", () => {
+        maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+        handleSlideButtons();
+        updateScrollThumbPosition();
+    });
 
-fetchData().then(data => {
-    showSkills(data);
-});
+    // Thumb drag functionality
+    let isDragging = false;
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        isDragging = true;
+        const startX = e.clientX;
+        const startLeft = parseInt(window.getComputedStyle(scrollbarThumb).left, 10);
+        
+        const handleMouseMove = (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - startX;
+                const newLeft = Math.min(Math.max(startLeft + deltaX, 0), sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                scrollbarThumb.style.left = `${newLeft}px`;
+                const newScrollPosition = (newLeft / (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth)) * maxScrollLeft;
+                imageList.scrollLeft = newScrollPosition;
+            }
+        };
 
-fetchData("projects").then(data => {
-    showProjects(data);
-});
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+            isDragging = false;
+        };
+
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+
+    // Initial call to set visibility and thumb position
+    handleSlideButtons();
+    updateScrollThumbPosition();
+};
+
+window.addEventListener("load", initSlider);
 
 // <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -193,17 +202,6 @@ document.onkeydown = function (e) {
     }
 }
 
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Live Chat
 
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
@@ -252,3 +250,89 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
+
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    document.body.classList.add('modal-open'); // Disable background scrolling
+  
+    // Add event listeners to the buttons
+    var buttons = modal.querySelectorAll('.btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', handleButtonClick);
+    });
+  }
+  
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+    document.body.classList.remove('modal-open'); // Enable background scrolling
+  
+    // Remove event listeners to prevent multiple alerts
+    var buttons = modal.querySelectorAll('.btn');
+    buttons.forEach(button => {
+      button.removeEventListener('click', handleButtonClick);
+    });
+  }
+  
+  function handleButtonClick(event) {
+    var link = event.target.getAttribute('data-link');
+    if (link) {
+      window.open(link, '_blank');
+    } else {
+        alert('Coming Soon.....')
+    }
+  }
+  
+  window.onclick = function(event) {
+    var modals = document.getElementsByClassName("modal");
+    for (var i = 0; i < modals.length; i++) {
+      if (event.target == modals[i]) {
+        modals[i].style.display = "none";
+        document.body.classList.remove('modal-open'); // Enable background scrolling
+  
+        // Remove event listeners to prevent multiple alerts
+        var buttons = modals[i].querySelectorAll('.btn');
+        buttons.forEach(button => {
+          button.removeEventListener('click', handleButtonClick);
+        });
+      }
+    }
+  }
+  
+
+  
+// Get all buttons
+const portfolioButtons = document.querySelectorAll('#portfolio-button-container button');
+
+// Get all image items
+const imageItems = document.querySelectorAll('.image-item');
+
+// Add click event listener to each button
+portfolioButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons
+    portfolioButtons.forEach(btn => btn.classList.remove('active'));
+    // Add active class to the clicked button
+    button.classList.add('active');
+
+    // Get the data-portfolio-section attribute value of the clicked button
+    const section = button.getAttribute('data-portfolio-section');
+
+    // If section is 'all', display all image items
+    if (section === 'all') {
+      imageItems.forEach(item => item.style.display = 'block');
+    } else {
+      // Otherwise, hide all image items and display only those with matching data-portfolio-section value
+      imageItems.forEach(item => {
+        if (item.getAttribute('data-portfolio-section') === section) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  });
+});
