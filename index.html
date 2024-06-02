@@ -128,6 +128,35 @@
       <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
       <div class="project-list">
 
+        <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal9')">
+          <img src="assets/images/youtube.jpg" alt="movie">
+          <div class="image-content">
+            <div class="text">
+              <h3>Youtube Video Summarizer</h3>
+              <hr>
+              <p class="explanation_portfolio">Streamlit-based tool summarizes YouTube video content using Google's Generative AI.</p>
+            </div>
+          </div>
+        </div>
+        <div id="modal9" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h2>Youtube Video Summarizer</h2>
+            <hr>
+            <h5>Description</h5>
+            <p>The purpose of this project is to automate the process of summarizing YouTube videos, making it easier for users to obtain concise notes from lengthy video content. It leverages advanced AI capabilities to process and condense information, enhancing productivity and efficiency in content consumption and research tasks.</p>
+            <img src="assets/images/youtube.png">
+            <h5>Languages and Tools: Python</h5>
+            <h5>Tools and Libraries: Streamlit,Google Generative AI, YouTube Transcript API and ReportLab</h5>
+            <p>Read More: You can check the code on the GitHub!</p>
+            <div class="buttons">
+              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/youtube_summary_generator">GitHub</button>
+              <button class="btn btn-secondary" data-link="">Live Demo</button>
+            </div>
+            
+            </div>
+        </div>
+
         <!-- First Modal Trigger and Content -->
         <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal1')">
           <img src="assets/images/movie.jpg" alt="movie">
