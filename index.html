@@ -32,8 +32,11 @@
           <ul>
               <li><a class="active" href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
               <li><a href="#project">Projects</a></li>
+              <!-- <li><a href="blog.html">Blog</a></li> -->
               <li><a href="#contact">Contact</a></li>
+              
           </ul>
       </nav>
 </header>
@@ -71,95 +74,162 @@
 <!-- hero section ends -->
 
 
-<!-- about section starts -->
+<!-- About Section Starts -->
 <section class="about" id="about">
   <div class="container">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="image2">
-                  <img draggable="false" class="tilt" src="./assets/images/image2.png" alt="">
-              </div>
-          </div>
-          <div class="col-md-6">
-              <div class="content">
-                  <h3>About Me</h3>
-                  <p>
-                    Hi, I'm Dhruti Joshi,
-                  </p>
-                  <p>
-                    As a recent graduate eager to pursue a career in data science, I have a strong foundation in data analytics, machine learning, and statistical modeling, which I have acquired through coursework and practical projects. My hands-on experience includes developing and implementing data-driven solutions in various course projects.
-                  </p>
-                  <p>
-                    I am keen to apply my skills in data preprocessing, visualization, analysis, and communication, with a background in software engineering, data analytics, machine learning, and AI, seeking opportunities in data science roles.
-                  </p>
-                  <p>
-                    In addition to my passion for Data Science, my life is enriched by various interests. I have a YouTube channel where I document the aspects of my life and create content. Here is the link to my <a href="https://www.youtube.com/channel/UC35XdMTXRS5pr4DDswya-xw" target="_blank">channel.</a>
-                  </p>
-                  <p>
-                    Available for short-term projects or part-time longer-term engagements.
-                  To know more, checkout my <a href="https://drive.google.com/file/d/1_V5mLplDChtO5RiJOZWAvQtLMRLKfRLp/view?usp=sharing" target="_blank">resume</a>.</p>
-              </div>
-          </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image2">
+          <img draggable="false" class="tilt" src="./assets/images/image2.png" alt="Profile Picture">
+        </div>
       </div>
+      <div class="col-md-6">
+        <div class="content">
+          <h3>About Me</h3>
+          <p>
+            Hi, I'm Dhruti Joshi,
+          </p>
+          <p>
+            As a Data Scientist with expertise in machine learning and data engineering, I specialize in creating predictive models, efficient data pipelines, and scalable solutions. My skills include working with advanced machine learning algorithms, crafting insightful data visualizations, and leveraging cloud platforms like Azure to deploy robust, real-time analytics systems.
+          </p>
+          <p>
+            I am passionate about helping businesses unlock the potential of their data by designing customized models that deliver actionable insights and drive strategic decision-making. If you're looking to enhance your business operations through data science, let’s connect and discuss how I can help.
+          </p>
+          <div class="resume-button">
+            <a href="https://drive.google.com/file/d/1_V5mLplDChtO5RiJOZWAvQtLMRLKfRLp/view?usp=sharing" target="_blank" class="btn">View Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+
 <!-- about section ends -->
+
+<!-- skill section start here -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i>Skills</h2>
+  <div class="skills-section">
+    <img src="assets/images/skills.webp" alt="Python">
+   </div>
+</section>
+<!-- skill section start here -->
 
 <!--project section starts -->
 <section class="projects" id="project">
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i>Projects</h2>
   <div class="text-section">
-    <p>A glimpse of the projects I've been working on...
+    <p>Take a Look at My Portfolio
     </p>
-    <p style="text-align: center;">(click to know more)</p>
-    <div id="portfolio-button-container">
-      <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
-      <button class="btn btn-secondary" data-portfolio-section="mining">Data Science</button>
-      <button class="btn btn-secondary" data-portfolio-section="dataviz">Data Aanlysis</button>
-      <button class="btn btn-secondary" data-portfolio-section="paper">Data Engineer</button>
-      <button class="btn btn-secondary" data-portfolio-section="dashboard"> Tableau Dashboard</button>
-    </div>
   </div>
 
   <div class="box-container">
     <div class ="slider-wrapper">
       <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
       <div class="project-list">
-
+        <!--Resume Evaluator-->
         <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal9')">
-          <img src="assets/images/youtube.jpg" alt="movie">
+          <img src="assets/images/AI_resume.png" alt="movie">
           <div class="image-content">
             <div class="text">
-              <h3>Youtube Video Summarizer</h3>
+              <h3>AI Enhanced Resume</h3>
               <hr>
-              <p class="explanation_portfolio">Streamlit-based tool summarizes YouTube video content using Google's Generative AI.</p>
+              <p class="explanation_portfolio">AI-Enhanced Resume Job Evaluator is a web application designed to help job seekers optimize their resumes for specific job descriptions.</p>
             </div>
           </div>
         </div>
         <div id="modal9" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal9')">&times;</span>
-            <h2>Youtube Video Summarizer</h2>
             <hr>
-            <h5>Description</h5>
-            <p>The purpose of this project is to automate the process of summarizing YouTube videos, making it easier for users to obtain concise notes from lengthy video content. It leverages advanced AI capabilities to process and condense information, enhancing productivity and efficiency in content consumption and research tasks.</p>
-            <img src="assets/images/youtube.png">
-            <h5>Languages and Tools: Python</h5>
-            <h5>Tools and Libraries: Streamlit,Google Generative AI, YouTube Transcript API and ReportLab</h5>
+            <h3>AI Enhanced Resume</h3>
+            <p>The AI-Enhanced Resume Job Evaluator is an innovative web application aimed at empowering job seekers to optimize their resumes for targeted job descriptions. By integrating cutting-edge AI technologies, including Google's Generative AI (Gemini), the platform offers personalized insights and actionable recommendations to enhance resume effectiveness and job relevance.
+            </p>
+            <img src="assets/images/Thumbnail.png">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>Resume Evaluation: Analyze your resume against specific job descriptions for alignment.</li>
+              <li>Skill Improvement Suggestions: Identify skill gaps and receive tailored recommendations to enhance your profile.</li>
+              <li>Keyword Optimization: Discover critical keywords missing from your resume to boost visibility.</li>
+              <li>Match Analysis: Gain insights into the match and mismatch percentages between your resume and the job description.</li>
+              <li>Responsibility Highlights: Highlight key responsibilities relevant to the role you're targeting.</li>
+              <li>Cover Letter Generation: Craft customized cover letters effortlessly, aligned with the job description.</li>
+              <li>Interview Preparation: Get personalized interview preparation tips and likely questions tailored to the role.</li>
+            </ul>
+            <h4>Technologies Used:</h4>
+            <ul>
+              <li>Flask: Framework for building the backend of the application.</li>
+              <li>HTML/CSS: For a clean, intuitive front-end design.</li>
+              <li>JavaScript: To enhance interactivity and user experience.</li>
+              <li>Google Generative AI (Gemini): Core AI model for advanced resume and job description analysis.</li>
+            </ul>
+            <h4>How It Works:</h4>
+            <ol>
+              <li>Enter a job description into the application.</li>
+              <li>Upload your resume (PDF format).</li>
+              <li>Select the action you wish to perform (e.g., Evaluate Resume, Identify Missing Keywords).</li>
+              <li>Submit your inputs to receive detailed feedback and actionable insights.</li>
+            </ol>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
-              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/youtube_summary_generator">GitHub</button>
-              <button class="btn btn-secondary" data-link="">Live Demo</button>
+              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/AI-EnhancedResume">GitHub</button>
             </div>
-            
-            </div>
+          </div>
         </div>
 
-        <!-- First Modal Trigger and Content -->
+        <!--Youtube Summerizer-->
+        <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal10')">
+          <img src="assets/images/youtube_summary.png" alt="movie">
+          <div class="image-content">
+            <div class="text">
+              <h3>Youtube Summary Generator</h3>
+              <hr>
+              <p class="explanation_portfolio">Streamlit tool using Google's Generative AI to summarize YouTube videos into concise notes, with PDF download support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal10" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <hr>
+            <h3>Youtube Summary Generator</h3>
+            <p>The YouTube Video Summarizer is a Streamlit-based application that transforms YouTube video content into concise summaries using Google's Generative AI. By extracting transcripts via the YouTube Transcript API, the tool generates summaries in short, medium, or long formats based on user preference. It simplifies content consumption, allowing users to quickly grasp key points without watching the entire video. Additionally, the application enables users to download the summaries as PDF documents for convenient offline access or sharing.</p>
+            <img src="assets/images/youtube.png">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>YouTube Link Input: Paste a YouTube video link.</li>
+              <li>Google API Integration: Authenticate using a Google API key.</li>
+              <li>Transcript Extraction: Fetch video transcripts with the YouTube Transcript API.</li>
+              <li>AI-Powered Summaries: Generate summaries (short, medium, or long) using Google's Generative AI (Gemini-Pro).</li>
+              <li>PDF Downloads: Save summaries as PDFs.</li>
+              <li>Interactive UI: Built with Streamlit for seamless user experience.</li>
+            </ul>
+            <h4>Technologies used:</h4>
+            <ul>
+              <li>Frontend: Streamlit</li>
+              <li>Backend: Python, YouTube Transcript API, Google Generative AI, ReportLab</li>
+            </ul>
+            <div class="how-it-works">
+            <h4>How It Works</h4>
+            <ol>
+              <li>Enter a YouTube video link and Google API key.</li>
+              <li>Choose a summary length.</li>
+              <li>Click Get Summary to view and download the summarized content.</li>
+            </ol>
+            <p>Read More: You can check the code on the GitHub!</p>
+            <div class="buttons">
+              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/AI-EnhancedResume">GitHub</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!--ReviewFlix-->
         <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal1')">
-          <img src="assets/images/movie.jpg" alt="movie">
+          <img src="assets/images/Movie_recommendeer.png" alt="movie">
           <div class="image-content">
             <div class="text">
               <h3>ReviewFlix</h3>
@@ -171,24 +241,62 @@
         <div id="modal1" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>ReviewFlix</h2>
-            <hr>
-            <h5>Description</h5>
-            <p>ReviewFlix is an advanced movie recommendation system that enhances traditional movie suggestions by integrating sentiment and emotion analysis. By leveraging data from IMDb and Rotten Tomatoes, the system offers personalized movie recommendations based on users' emotional states and sentiments expressed in movie reviews and social media posts.</p>
-            <img src="assets/images/movie.jpg">
-            <h5>Languages and Tools: Python, Flask, BERT, CNN, RNN</h5>
-            <h5>Data Sources: IMDb and Rotten Tomatoes</h5>
+            <h2>ReviewFlix: Social-Media Powered Movie Recommender with Sentiment and Emotion Analysis</h2>
+            <p>ReviewFlix is an innovative movie recommendation system that enhances traditional recommendation algorithms by incorporating sentiment and emotion analysis from social media and movie review platforms. By analyzing users' sentiments and emotional responses to films, the system offers personalized and contextually relevant movie recommendations, ensuring a more engaging user experience. This project leverages data from IMDb and Rotten Tomatoes to create a highly personalized and accurate recommendation engine based on real user emotions and sentiments.</p>
+
+            <h4>Key Features: </h4>
+            <ul>
+              <li>Sentiment Analysis: Using the BERT transformer model, the system classifies movie reviews and tweets from IMDb and Rotten Tomatoes as positive or negative, offering insights into users' emotional reactions to films.</li>
+              <li>Emotion Detection: The system utilizes Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) to identify emotions like "Fabulous," "Satisfy," "Disappointed," and more, based on movie-related text, providing deeper emotional context to recommendations.</li>
+              <li>Personalized Recommendation Engine: The recommendation engine combines sentiment, emotion, and user ratings from IMDb and Rotten Tomatoes to generate highly tailored movie suggestions.</li>
+              <li>User-Friendly Interface: A seamless web interface enables users to input preferences, receive personalized recommendations, and explore movie details, ratings, and reviews.</li>
+            </ul>
+
+            <h4>Technologies used: </h4>
+            <ul>
+              <li>Python (>=3.6)</li>
+              <li>Libraries: Flask, Pandas, Scikit-learn, TensorFlow/Keras, BERT, NLTK, and more.</li>
+            </ul>
+
+            <h4>Data Collection</h4>
+            <p>Use the "dataset_creation.py" script to scrape movie-related data from IMDb and Rotten Tomatoes. This will generate the final dataset in "dataset.csv".</p>
+
+            <h4>Sentiment and Emotion Analysis</h4>
+            <ul>
+              <li>Execute sentiment analysis scripts ("EDA_Bert_Analysis_RT.py" and "EDA_Bert_Analysis_imdb.py") to preprocess, analyze, and apply BERT-based sentiment analysis on movie reviews.</li>
+              <li>After sentiment analysis, two columns—"sentiment_imdb" and "sentiment_rt"—will be added to the dataset, classifying each review as positive or negative.</li>
+              <li>Emotion analysis is performed using the "EmotionAnalysis.py" script, detecting emotions such as "Fabulous," "Satisfy," and "Disappointed" in movie reviews.</li>
+              <li>Post-emotion analysis, the dataset will include two new columns—"Emotion_imdb" and "Emotion_RT"—indicating the detected emotion for each review.</li>
+              <li>All results are saved in "data.csv" and "final_data.csv" within the "sentiment analysis" and "Emotion analysis" folders, respectively.</li>
+            </ul>
+
+            <h4>Recommendation Engine</h4>
+            <ul>
+              <li>Run the "score_compute.py" script to compute scores for each movie based on sentiment, emotion, and ratings from IMDb and Rotten Tomatoes.</li>
+              <li>The computed scores are saved in a new CSV file, which is used by the recommendation engine.</li>
+              <li>To start the recommendation system, run the "app.py" Flask application, and open your browser at <a href="http://localhost:5004/">http://localhost:5004/</a> to interact with the system.</li>
+            </ul>
+
+            <h4>Technical Overview</h4>
+            <p>ReviewFlix uses machine learning techniques like BERT for sentiment analysis and CNN/RNN for emotion detection to gain deeper insights into users' emotional responses to movies. By combining these insights with user ratings, the recommendation engine generates highly personalized movie suggestions that align with users' emotional and sentiment-based preferences. The integration of social media data and review platforms ensures a dynamic and constantly evolving recommendation system, capable of adapting to shifting trends and user sentiments.</p>
+
+            <h4>Future Enhancements</h4>
+            <ul>
+              <li>Expand sentiment and emotion analysis to include additional sources like Twitter and user reviews.</li>
+              <li>Improve the recommendation algorithm with collaborative filtering to consider users with similar emotional profiles.</li>
+              <li>Implement a feedback loop where users can rate the recommendations, improving future suggestions based on their interactions.</li>
+            </ul>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
               <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/MovieRecommendationGenerator">GitHub</button>
-              <button class="btn btn-secondary" data-link="">Live Demo</button>
             </div>
             
-            </div>
+          </div>
         </div>
 
+        <!--LA Crime Prediction-->
         <div class="image-item" data-portfolio-section="prediction" onclick="openModal('modal8')">
-          <img src="assets/images/la.png" alt="movie">
+          <img src="assets/images/la_crime.png" alt="movie">
           <div class="image-content">
             <div class="text">
               <h3>LA Crime Prediction</h3>
@@ -200,26 +308,60 @@
         <div id="modal8" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal8')">&times;</span>
-            <h2>Predictive Analysis of Crime Rates in Los Angeles</h2>
-            <hr>
-            <h5>Description</h5>
-            <p>The project aims to develop a predictive model for crime rates in Los Angeles to enhance public safety measures and resource allocation. Given the dynamic nature of crime patterns, precise forecasting can help law enforcement agencies to preemptively address potential hotspots.</p>
-            <img src="assets/images/crime.png">
-            <h5>Languages and Tools: Python, pandas, Numpy, matplotlip, seaborn</h5>
-            <h5>Model Architecture: SARIMAX</h5>
-            <p>Read More: You can check the code on the GitHub!</p>
+            <h2>Crime Rate Prediction Model for Los Angeles</h2>
+            <p>This project involves the development of a predictive model aimed at forecasting crime rates across Los Angeles, helping local authorities enhance public safety and optimize resource allocation. By leveraging historical crime data, the model provides actionable insights into crime trends, enabling proactive measures to address potential crime hotspots. This data-driven approach supports decision-making for law enforcement agencies, fostering safer communities.</p>
+
+            <h4>Project Objective</h4>
+            <p>The primary objective is to build an accurate predictive model capable of forecasting crime occurrences in Los Angeles, offering valuable insights to law enforcement for strategic resource allocation and targeted interventions.</p>
+
+            <h4>Data Source</h4>
+            <p>The model leverages publicly available crime data from [Crime Data from 2020 to Present](https://catalog.data.gov/dataset/crime-data-from-2020-to-present), ensuring access to accurate and up-to-date information for analysis and forecasting.</p>
+
+            <h4>Data Preparation</h4>
+            <h4>Preprocessing and Feature Engineering</h4>
+            <ul>
+              <li>Data cleaning was performed to address missing values, remove duplicates, and standardize data formats for seamless analysis.</li>
+              <li>Date-time features were processed, including extracting day of the week, month, and hour to capture temporal patterns influencing crime rates.</li>
+              <li>Geospatial data was verified to ensure accurate location representation for crime incidents, enabling precise crime hotspot identification.</li>
+            </ul>
+
+            <h4>Exploratory Data Analysis (EDA)</h4>
+            <ul>
+              <li>Crime Distribution Analysis: The top crime categories were theft, burglary, and violent offenses, with vehicle theft being the most prevalent. This analysis helps in identifying patterns of criminal activity and potential areas for intervention.</li>
+              <img src="assets/images/topcrimetypes.png" alt="Crime Distribution" />
+              
+              <li>Crime Hotspot Identification: The highest crime rates were concentrated in Central, 77th Street, Pacific, Southwest, and Hollywood areas. This spatial analysis enables targeted resource deployment in high-crime regions.</li>
+              <img src="assets/images/area.png" alt="Crime Hotspot Identification" />
+              
+              <li>Gender-based Crime Distribution: Analysis of crime incidents by victim gender revealed no significant differences, but raised questions about the representation of unknown gender data, which warrants further investigation.</li>
+              <img src="assets/images/Victimgender.png" alt="Crime Incidents by Gender" />
+              
+              <li>Seasonal Crime Trends: Crime incidents showed varying patterns over months and time of day. Notably, peak crime times occurred at noon and around dinner time, providing critical data for law enforcement to predict crime spikes.</li>
+              <img src="assets/images/crimeovermonth.png" alt="Crime Over Months" />
+              
+              <li>Age Demographics in Crime Incidents: The analysis identified age-related crime patterns, including notable peaks at ages 50 for White and 35 for Unknown, indicating specific age groups may be more susceptible to certain types of crime.</li>
+              <img src="assets/images/analysisonage1.png" alt="Age Demographics Part 1" />
+              <img src="assets/images/analysisonage2.png" alt="Age Demographics Part 2" />
+              
+              <li>Victim Demographics by Area: Latinx, White, and Black communities were found to be most affected by crimes in high-crime areas. Understanding demographic vulnerabilities allows law enforcement to tailor community outreach and intervention strategies.</li>
+              <img src="assets/images/distibution.png" alt="Victim Demographics by Crime Area" />
+            </ul>
+
+            <h4>SARIMAX Model Implementation</h4>
+            <p>The predictive model was built using the SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) technique. Hyperparameter optimization was performed using grid search, resulting in the model (1, 0, 2)x(2, 0, [1], 12). This model effectively captured temporal and seasonal trends in crime data, offering a reliable forecast. The model achieved an AIC of 520.602 and a BIC of 530.640, reflecting solid fit performance. Further refinement could improve seasonal component significance.</p>
+
+            <h4>Performance Evaluation</h4>
+            <p>The model's accuracy was evaluated using the RMSE (Root Mean Square Error) metric, yielding a value of 656.30. While the model showed improvement over baseline predictions, there is room for refinement. Future improvements will focus on incorporating additional data sources, refining model features, and continuously optimizing the predictive accuracy for more precise crime forecasting.</p>
+
             <div class="buttons">
               <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/LA_Crime_Prediction">GitHub</button>
             </div>
-            </div>
+          </div>
         </div>
-
-        
-
-        <!-- Third Modal Trigger and Content -->
       
+        <!--VFS-->
         <div class="image-item" data-portfolio-section="Prediction" onclick="openModal('modal3')">
-          <img src="assets/images/fashion.jpeg" alt="vfs">
+          <img src="assets/images/vfs.png" alt="vfs">
           <div class="image-content">
             <div class="text">
               <h3>VFS</h3>
@@ -231,24 +373,50 @@
         <div id="modal3" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <h2>Virtual Fashion Stylist</h2>
-            <hr>
-            <p>The Virtual Fashion Stylist app revolutionizes personal styling by providing users with a personalized fashion experience right at their fingertips. By leveraging advanced recommendation algorithms and generative AI, the app tailors clothing and accessory suggestions to each user's unique style preferences. Users can input their preferences, including body type, skin tone, and favorite colors, to receive customized outfit recommendations for various occasions. Additionally, the app features an inspiration section with full outfit collections inspired by famous fashion bloggers and current trends.</p>
-            <!-- Add more content as needed -->
-            <img src="assets/images/fashion.jpeg"></img>
-            <h5>Languages and Tools: Python, Android JAVA, NLP, TensorFlow, Flask  </h5>
-            <h5>Model Architecture: Generative Adversarial Networks (GANs) for outfit generation, Natural Language Processing (NLP) for Q&A sessions</h5>
-            <h5>Data Sources: Fashion blogs, social media platforms, user input</h5>
+            <h2>Virtual Fashion Assistant: Personalized Fashion Advice Powered by AI</h2>
+            <p>The Virtual Fashion Assistant app is designed to provide users with customized fashion advice, helping them find the perfect outfits tailored to their body type, skin tone, and personal style preferences. By leveraging advanced algorithms and user-interactive quizzes, the app ensures a seamless and personalized shopping experience. It serves as a comprehensive solution for individuals seeking to enhance their fashion choices without the need to browse multiple stores or spend excessive time curating outfits.</p>
+
+            <h4>Key Features</h4>
+            <ul>
+              <li>Body Type & Skin Tone Quiz: The app uses a Q&A style quiz to determine the user’s body shape and skin tone, allowing it to offer accurate and personalized fashion advice.</li>
+              <li>Personalized Fashion Style Quiz: A dedicated style quiz captures the user's fashion preferences, ensuring outfit recommendations align with their unique taste and lifestyle.</li>
+              <li>Occasion-Based Outfit Collections: Users receive curated outfit suggestions based on specific occasions (e.g., weddings, casual outings, office wear), saving time and reducing decision fatigue.</li>
+              <li>Personalized Recommendations: Based on quiz results, the app offers a tailored collection of outfits, simplifying the process of discovering the perfect clothing items for every occasion.</li>
+            </ul>
+
+            <h4>What We Achieved During Development</h4>
+            <p>Our app has successfully integrated an intuitive and personalized system for users to find the ideal outfits tailored to their unique body type, skin tone, and fashion preferences. The integration of a body type quiz, style preferences quiz, and occasion-based recommendations enhances the app’s ability to provide users with relevant, personalized fashion advice. The overall goal is to make fashion accessible, effortless, and enjoyable for users by eliminating the need to sift through countless options.</p>
+
+            <h4>Future Work</h4>
+            <ul>
+              <li>Machine Learning Integration: The next iteration of the app will incorporate machine learning algorithms to analyze fashion trends, allowing the system to predict and suggest future fashion styles, ensuring users always have the latest advice.</li>
+              <li>Augmented Reality (AR) Technology: Future updates will feature AR functionality, allowing users to virtually try on clothes. This will provide users with a more realistic preview of how outfits will look on them before making a purchase.</li>
+              <li>Database & Backend System Integration: Implementing a robust database and backend system will enable secure and efficient storage of user data and outfit collections, enhancing the app’s scalability and performance.</li>
+              <li>Social Network & Collaboration Features: The app will evolve into a social platform, enabling users to share outfit ideas, seek advice, and connect with fashion influencers. Brands can collaborate with users, further extending the app's community-driven potential.</li>
+            </ul>
+
+            <h4>Technical Overview</h4>
+            <p>The app utilizes AI-driven quizzes to capture user preferences, which then feeds into an algorithm designed to suggest personalized outfits. For future releases, we plan to leverage machine learning models for trend analysis and predictive fashion recommendations. Additionally, incorporating augmented reality will allow users to visualize outfits in real-time, enhancing the user experience and driving purchase confidence.</p>
+
+            <h4>Business Value</h4>
+            <p>The Virtual Fashion Assistant app provides a unique value proposition by combining personalized fashion advice with convenience. By reducing the time and effort spent on finding the right outfits, the app appeals to busy individuals looking to optimize their wardrobe and make informed decisions. Furthermore, integrating social aspects and brand collaborations opens avenues for monetization and community engagement, which will foster long-term user retention and brand partnerships.</p>
+
+            <h4>Future Enhancements</h4>
+            <ul>
+              <li>Expand the app’s reach by integrating with e-commerce platforms for direct outfit purchases.</li>
+              <li>Enhance AI capabilities to provide dynamic outfit recommendations based on weather, geographical location, and user activity.</li>
+              <li>Offer personalized recommendations based on past purchases, user interactions, and feedback to improve the app’s overall intelligence.</li>
+            </ul>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
               <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/virtual_fashion_stylist">GitHub</button>
-              <button class="btn btn-secondary" data-link="">Live Demo</button>
             </div>
             </div>
         </div>
 
+        <!--Tide Level Prediction-->
         <div class="image-item" data-portfolio-section="dataviz" onclick="openModal('modal4')">
-          <img src="assets/images/time.png" alt="stock">
+          <img src="assets/images/tide_level.png" alt="stock">
           <div class="image-content">
             <div class="text">
               <h3>Tide Level Prediction</h3>
@@ -263,10 +431,30 @@
             <h2>Tide Level Prediction</h2>
             <hr>
             <p>This project evaluates three GRU models for predicting tide time-series data at BHP. Starting with data preprocessing and splitting, each model—simple GRU (Model 1), varied layers and units (Model 2), and different activations (Model 3)—is trained and assessed. Metrics like MSE, RMSE, and MAE guide comparisons, alongside statistical tests and graphical analyses of predictions. Hyperparameter tuning optimizes each model, leading to the selection of the best-performing configuration for accurate tide predictions at BHP.</p>
-            <!-- Add more content as needed -->
-            <img src="assets/images/time.png"></img>
-            <h5>Languages and Tools: Python, pandas, Numpy, matplotlip, seaborn</h5>
-            <h5>Model Architecture: GRU(Gated Recurrent Unit)</h5>
+            <h4>Technology Used:</h4>
+            <ul>
+                <li>Python,TensorFlow/Keras (for model building), NumPy (for numerical operations), Pandas (for data manipulation), Matplotlib (for data visualization), Scikit-learn (for evaluation metrics)</li>
+            </ul>
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Model 1: Simple GRU – A basic GRU architecture for time-series forecasting with a single layer of GRU units.</li>
+                <li>Model 2: GRU with Multiple Units and Layers – Experimentation with the number of GRU units and layers to optimize prediction performance.</li>
+                <li>Model 3: GRU with Different Activation Functions – Modification of activation functions (e.g., tanh, sigmoid, ReLU) to improve model performance and accuracy.</li>
+                <li>Time-Series Data Processing – Preprocessing of tide data for sequential predictions using GRU networks.</li>
+                <li>Model Evaluation – Comparison of models to determine the best-performing GRU configuration.</li>
+            </ul>
+            <h4>Dataset:</h4>
+            <ul>
+                <li>Training Data: <em>BHPtraining.csv</em> (Tide data from 2017-2019)</li>
+                <li>Testing Data: <em>BHPtest.csv</em> (Tide data from 2020)</li>
+            </ul>
+
+            <h4>Future Work:</h4>
+            <ul>
+                <li>Hyperparameter Tuning: Optimizing model parameters such as learning rate and batch size for better accuracy.</li>
+                <li>Advanced Models: Exploring LSTM (Long Short-Term Memory) networks or hybrid models for more robust predictions.</li>
+                <li>Real-Time Prediction: Extending the model to predict tides in real-time with granular data input.</li>
+            </ul>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
               <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/TidePredictionusingGRU">GitHub</button>
@@ -274,81 +462,82 @@
             </div>
         </div>
 
-        <!-- Second Modal Trigger and Content -->
+        <!--Walmart demand forcasting-->
         <div class="image-item" data-portfolio-section="mining" onclick="openModal('modal2')">
-          <img src="assets/images/stock.jpg" alt="stock">
+          <img src="assets/images/Walmart Demand Forecasting.png" alt="stock">
           <div class="image-content">
             <div class="text">
-              <h3>Stock Prediction</h3>
+              <h3>Walmart Demand Forecasting</h3>
               <hr>
-              <p class="explanation_portfolio">TensorFlow implementation of an LSTM neural network</p>
+              <p class="explanation_portfolio">Predicts Walmart sales to optimize inventory, staffing, and marketing strategies.</p>
             </div>
           </div>
         </div>
         <div id="modal2" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Stock Prediction</h2>
+            <h2>Walmart Demand Forecasting: A Data-Driven Case Study</h2>
             <hr>
-            <p>Predicting stock prices is notoriously challenging due to the lack of discernible patterns. However, leveraging deep neural learning, particularly LSTM (Long Short-Term Memory) networks, can uncover hidden patterns and enhance prediction accuracy. LSTM networks, a type of Recurrent Neural Network (RNN), excel at retaining information over extended periods, making them ideal for time series forecasting.</p>
-            <img src="assets/images/stock.jpg">
-            <h5>Languages and Tools: Python, TensorFlow</h5>
-            <h5>Model Architecture: LSTM networks for capturing temporal dependencies</h5>
+            <p>This project applies machine learning and deep learning models to predict Walmart's sales data, with the goal of optimizing inventory, staffing, and marketing strategies. By accurately forecasting sales for different departments across various stores, this project enhances operational efficiency and decision-making in the retail sector.</p>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Programming Language: Python</li>
+                <li>Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost</li>
+                <li>Deployment: Streamlit for creating an interactive application</li>
+            </ul>
+
+            <h4>Key Features</h4>
+            <ul>
+                <li>Data preprocessing (handling missing values, outlier removal, feature engineering)</li>
+                <li>Implementation of multiple machine learning models (Linear Regression, Random Forest, XGBoost, K-Neighbors)</li>
+                <li>Model evaluation using R² Score, MAE, MSE, RMSE</li>
+                <li>Performance comparison of models to identify the best one</li>
+                <li>Interactive visualizations for insights into sales trends and seasonal patterns</li>
+            </ul>
+
+            <h4>Dataset</h4>
+            <p>The project uses data from the Kaggle competition <strong>Walmart Recruiting - Store Sales Forecasting</strong>:</p>
+            <ul>
+                <li><strong>train.csv:</strong> Weekly sales data for various stores and departments.</li>
+                <li><strong>stores.csv:</strong> Metadata on store type and size.</li>
+                <li><strong>features.csv:</strong> Additional data including temperature, fuel prices, CPI, unemployment rate, and holiday flags.</li>
+            </ul>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
-              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/StockPricePrediction">GitHub</button>
+              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/Demand-Forcasting-For-Walmart">GitHub</button>
             </div>
             </div>
         </div>
 
-        <div class="image-item" data-portfolio-section="dataviz" onclick="openModal('modal5')">
-          <img src="assets/images/caption.png" alt="stock">
-          <div class="image-content">
-            <div class="text">
-              <h3>Image Caption Generator</h3>
-              <hr>
-              <p class="explanation_portfolio">Employs Xception CNN for feature extraction and LSTM for caption generation from images.</p>
-          </div>
-          </div>
-        </div>
-        <div id="modal5" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal5')">&times;</span>
-            <h2>Image Caption Generator</h2>
-            <hr>
-            <p>This project aims to develop an Image Caption Generator using Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) with Long Short Term Memory (LSTM) layers. Implemented in Python within a Jupyter notebook, the model utilizes TensorFlow and Keras. The dataset employed is Flickr 8K, comprising 8,000 images, each paired with five descriptive captions. The CNN extracts features and encodes input images, providing an image embedding as the initial input to the LSTM-based RNN, a distinctive feature of this architecture. Each step of the project, from data preprocessing to model training and evaluation, is meticulously documented to ensure clarity and reproducibility.</p>
-            <!-- Add more content as needed -->
-            <img src="assets/images/caption.png"></img>
-            <h5>Languages and Tools: Python, pandas, Numpy, matplotlip, seaborn</h5>
-            <h5>Model Architecture: CNN And RNN with LSTM</h5>
-            <p>Read More: You can check the code on the GitHub!</p>
-            <div class="buttons">
-              <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/Image_Caption_Generator">GitHub</button>
-              <button class="btn btn-secondary" data-link="">Live Demo</button>
-            </div>
-            </div>
-        </div>
-
+        <!--Predicting customer Behaviour-->
         <div class="image-item" data-portfolio-section="paper" onclick="openModal('modal6')">
-          <img src="assets/images/customer.png" alt="stock">
+          <img src="assets/images/Predicting_Customer_Behaviour.png" alt="stock">
           <div class="image-content">
             <div class="text">
-              <h3>Customer Segmentation</h3>
+              <h3>Predicting customer Behaviour</h3>
               <hr>
-              <p class="explanation_portfolio">K-Means clustering for targeted marketing, boosting sales through customer segmentation.</p>
+              <p class="explanation_portfolio">Predicting customer behavior to optimize marketing and retention.</p>
           </div>
           </div>
         </div>
         <div id="modal6" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modal6')">&times;</span>
-            <h2>Customer Segmentation</h2>
+            <h2>Predictive Customer Behavior Classification for E-Commerce</h2>
             <hr>
             <p>This project aims to leverage unsupervised clustering techniques to perform customer segmentation on a groceries firm's database. By analyzing demographic, behavioral, and transactional data, the project will identify distinct customer segments that reflect similarities among customers within each group. This segmentation will enable the firm to tailor its marketing strategies, product offerings, and customer services to the unique needs and behaviors of each segment. The ultimate goal is to optimize the value of each customer to the business, enhance customer satisfaction, and drive growth by providing more personalized and targeted experiences.</p>
-            <!-- Add more content as needed -->
-            <img src="assets/images/customer.png"></img>
-            <h5>Language and Tools: Python, Jupyter Notebook</h5>
-            <h5>Model Architecture: K-Means clustering</h5>
+            <h4>Dataset</h4>
+            <p>The dataset consists of e-commerce purchase records from around 4000 customers, including customer ID, product category, purchase amount, product name, purchase date, country, and cancellation status.</p>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebooks</li>
+            </ul>
+            <h4>Key Features</h4>
+            <ul>
+                <li>Customer Segmentation into 11 categories: Classify customers based on purchasing patterns and behaviors to tailor marketing efforts, drive more effective targeting, and increase conversion rates.</li>
+                <li>Predictive Modeling for Future Behavior: Use data-driven insights to forecast customer preferences, enabling businesses to anticipate demand, reduce stockouts, and optimize inventory management.</li>
+                <li>Enhanced Marketing Personalization and Inventory Management: Leverage customer behavior predictions to design personalized marketing campaigns, improve customer retention, and ensure that high-demand products are always in stock, leading to higher sales and improved customer satisfaction.</li>
+            </ul>
             <p>Read More: You can check the code on the GitHub!</p>
             <div class="buttons">
               <button class="btn btn-secondary" data-link="https://github.com/dhrutijoshi11/Customer_Segmentation">GitHub</button>
@@ -356,34 +545,6 @@
             </div>
         </div>
 
-        <div class="image-item" data-portfolio-section="paper" onclick="openModal('modal7')">
-          <img src="assets/images/fake.jpeg" alt="stock">
-          <div class="image-content">
-            <div class="text">
-              <h3>Fake news detection Model</h3>
-              <hr>
-              <p class="explanation_portfolio">Classifies news articles as real or fake using machine learning to combat misinformation spread.</p>
-          </div>
-          </div>
-        </div>
-        <div id="modal7" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal7')">&times;</span>
-            <h2>Fake news detection Model</h2>
-            <hr>
-            <p>This project addresses the pressing issue of fake news by developing machine learning models capable of classifying news articles as genuine or fake. Using a diverse dataset of news articles labeled as either true or false, the project employs four different techniques. Each model is trained to automatically assess the authenticity of news articles based on their content, aiming to provide a robust solution against the spread of misinformation in digital media. The dataset used is crucial for training and evaluating the models, ensuring they can effectively differentiate between real and fabricated news articles, thereby contributing to promoting accurate information dissemination.</p>
-            <!-- Add more content as needed -->
-            <img src="assets/images/fake.jpeg"></img>
-            <h5>Languages and Tools: Python</h5>
-            <h5>Model Architecture: Logistic Regression, Decision Tree Classifier, Gradient Boost Classifier, and Random Forest Classifier</h5>
-            <p>Read More: You can check the code on the GitHub!</p>
-            <div class="buttons">
-              <button class="btn btn-secondary" data-link="">GitHub</button>
-            </div>
-            </div>
-        </div>
-
-        <!-- Add more image-items with image and image-content divs as needed -->
       </div>
       <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
     </div>
@@ -398,8 +559,7 @@
 
 <!--project section ends -->
 
-
-
+<!--contact section starts -->
 
 <section class="contact" id="contact">
   <h2 class="heading"><i class="fas fa-headset"></i> Contact</h2>
