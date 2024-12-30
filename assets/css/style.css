@@ -487,7 +487,7 @@ header .navbar ul li a:hover {
 /* Updated for Grid Layout */
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates a responsive grid */
+  grid-template-columns: repeat(4, 1fr); /* Creates a responsive grid */
   gap: 20px;
   font-size: 0;
   margin-bottom: 30px;
